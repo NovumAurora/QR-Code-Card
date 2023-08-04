@@ -1,0 +1,87 @@
+/* Custom Properties */
+:root {
+  /* font */
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-300: .9375rem;
+  --fs-400: 1rem;
+  --fs-600: 1.4rem;
+
+  --ff-primary: 'Outfit', sans-serif;
+
+  --ff-body: var(--ff-primary);
+
+  /* color */
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --clr-accent-300: hsl(220, 15%, 55%);
+  --clr-accent-400: hsl(212, 45%, 89%);
+  --clr-accent-500: hsl(218, 44%, 22%);
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+p,
+h1,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* CSS Styling */
+body {
+  font-family: var(--ff-body);
+}
+
+.flex-wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--clr-accent-400);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  width: 320px;
+  padding: 16px 16px 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  background-color: var(--clr-neutral-100);
+}
+
+.card__img {
+  border-radius: 10px;
+}
+
+.card__title {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-600);
+  color: var(--clr-accent-500);
+}
+
+.card__description {
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: var(--fs-400);
+  color: var(--clr-accent-300);
+}
